@@ -22,7 +22,7 @@ function handleCredentialResponse(response) {
             document.getElementById('user-name').textContent = userInfo.name;
 
             // Điều hướng tới URL sau khi đăng nhập thành công
-            window.location.href = "finnng.io.vn"; 
+            window.location.href = ""; 
         })
         .catch(error => {
             console.error('Error:', error);
@@ -46,17 +46,5 @@ function loginByGoogle() {
     }
 }
 
-function signOut() {
-    // Xóa thông tin người dùng khỏi local storage
-    localStorage.removeItem('userArray');
 
-    // Cập nhật giao diện để hiển thị nút đăng nhập
-    document.getElementById('loginBtn').style.display = 'block';
-    document.getElementById('user-info').style.display = 'none';
-    document.getElementById('user-avatar').src = '';
-    document.getElementById('user-name').textContent = '';
-
-    // Điều hướng người dùng về trang chủ hoặc trang đăng nhập
-    window.location.href = "finnng.io.vn"; 
-}
-export { loginByGoogle, handleCredentialResponse, signOut};
+export { loginByGoogle, handleCredentialResponse};
