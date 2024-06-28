@@ -8,3 +8,6 @@ window.onload = function() {
     showProductsByCategory(listProduct, 'fruit');
     loginByGoogle();
 }
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.classList.add("fade-in");
+  });

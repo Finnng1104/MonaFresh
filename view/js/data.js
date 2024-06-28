@@ -117,15 +117,6 @@ let listProduct = [
       description: "Đây là loại trái sầu riêng thơm ngon."
     },
     {
-      id: 15,
-      name: "Sầu riêng lớn",
-      image: "sau-rieng_grande.webp",
-      category: "",
-      price: "220,000",
-      sell: 20,
-      description: "Đây là loại trái sầu riêng lớn."
-    },
-    {
       id: 16,
       name: "Súp lơ xanh",
       image: "suplo.jpg",
