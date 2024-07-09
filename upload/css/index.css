@@ -6,6 +6,24 @@
   font-family: Arial, sans-serif;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Apply the fade-in animation to the body */
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+
+/* Initially hide the body content */
+body {
+  opacity: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,7 +40,6 @@ a {
   justify-content: space-between;
   padding: 10px 0;
   color: rgba(102, 102, 102, 0.8509803922);
-  margin-bottom: 15px;
 }
 .header-top a {
   color: rgba(102, 102, 102, 0.8509803922);
@@ -73,6 +90,11 @@ a {
 .header-main {
   display: flex;
   justify-content: space-between;
+  padding: 30px 0 15px 0; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
   padding: 15px 0 15px 0;
   position: sticky;
   top: 0;
@@ -495,4 +517,22 @@ footer .logo img {
 }
 footer address i {
   margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Additional Styles */
+.form-content a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.form-content a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
