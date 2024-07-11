@@ -113,6 +113,12 @@ a{
             }
         }
     }
+    .navigation li.active{
+        background-color: #6ABD45;
+        a{
+            color: white;
+        }
+    }
     .search{
         display: flex;
         align-items: center;
@@ -505,5 +511,126 @@ footer{
        }
     }
 }
+@media (min-width: 768px) and (max-width: 1350px) {
+    .search{
+        display: none !important;
+    }
+}
 
-
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        .separator {
+            display: none;
+        }
+        .header-contact {
+            margin-bottom: 10px;
+        }
+        .header-auth {
+            margin-top: 10px;
+            .separator {
+                display: none;
+            }
+        }
+    }
+    .header-main {
+        flex-direction: column;
+        align-items: center;
+        .logo {
+            margin-bottom: 20px;
+        }
+        .navigation {
+            margin-bottom: 20px;
+        }
+        .search {
+            margin-bottom: 20px;
+        }
+    }
+    .hero-content {
+        padding: 150px 20px 100px 20px;
+        font-size: 20px;
+        span {
+            font-size: 40px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    }
+    .modal-content {
+        margin: 10% auto;
+        width: 90%;
+        max-width: 400px;
+    }
+    .product-categories {
+        padding-top: 30px;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .categories {
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+    .promotion-categories {
+        padding-top: 30px;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .categories {
+            flex-direction: column;
+            align-items: center;
+            .category {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .featured-products {
+        padding-top: 30px;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .product-list {
+            justify-content: center;
+            .product {
+                width: 30%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .blogs {
+        padding-top: 30px;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .blog-list {
+            justify-content: center;
+            .blog-item {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .footer-item {
+        text-align: center;
+        margin-bottom: 30px;
+        ul {
+            text-align: center;
+        }
+        input {
+            margin: 10px auto 20px auto;
+        }
+    }
+}
