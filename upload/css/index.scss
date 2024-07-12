@@ -397,7 +397,7 @@ a{
                 width: 100%;
                 height: auto;
                 overflow: hidden;
-                transition: transform 1s ease-in-out;
+                transition: transform 0.5s ease-in-out;
             }
             .blog-content{
                 text-align: left;
@@ -424,7 +424,7 @@ a{
 }
 .customer-testimonials{
     background: url('../img/background-image.jpg');
-    padding: 40px 0 50px 0; 
+    padding: 30px 0 50px 0; 
     margin-top: 40px;
     .container{
         text-align: center;
@@ -509,6 +509,52 @@ footer{
        i{
            margin-right: 10px;
        }
+    }
+}
+.customer-testimonials{
+    .testimonials{
+        display: flex;
+        justify-content: space-between;
+        blockquote{
+            width: 33%;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            p{
+                color: white;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.commitment{
+    padding-top: 50px;
+    text-align: center;
+    h2{
+        font-size: 27px;
+        margin-bottom: 50px;
+        color: $title-color;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .commitment-list{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .commitment-item{
+            width: 19%;
+            text-align: center;
+            img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 @media (min-width: 768px) and (max-width: 1350px) {

@@ -399,7 +399,7 @@ a {
   width: 100%;
   height: auto;
   overflow: hidden;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .blogs .blog-list .blog-item .blog-content {
   text-align: left;
@@ -422,7 +422,7 @@ a {
 
 .customer-testimonials {
   background: url("../img/background-image.jpg");
-  padding: 40px 0 50px 0;
+  padding: 30px 0 50px 0;
   margin-top: 40px;
 }
 .customer-testimonials .container {
@@ -505,6 +505,52 @@ footer .logo img {
 }
 footer address i {
   margin-right: 10px;
+}
+
+.customer-testimonials .testimonials {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-testimonials .testimonials blockquote {
+  width: 33%;
+}
+.customer-testimonials .testimonials blockquote img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.customer-testimonials .testimonials blockquote p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.commitment {
+  padding-top: 50px;
+  text-align: center;
+}
+.commitment h2 {
+  font-size: 27px;
+  margin-bottom: 50px;
+  color: #1c1c1c;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.commitment .commitment-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.commitment .commitment-list .commitment-item {
+  width: 19%;
+  text-align: center;
+}
+.commitment .commitment-list .commitment-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1350px) {

@@ -120,15 +120,45 @@
     <section class="customer-testimonials">
         <div class="container">
             <h2>Khách hàng nói gì về MonaFresh</h2>
-            <div class="testimonials"></div>
-            <blockquote>
-                <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”</p>
-                <!-- <footer>— Chị Phúc / Mona Media</footer> -->
+            <div class="testimonials d-flex">
+                <blockquote>
+                    <img src="upload/img/customer-comment/customer1.jpg" alt="">
+                    <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”</p>
+                    <p> <b>Chị Phúc </b>/ Mona Media</p>
                 </blockquote>
-            <blockquote>
-                <p>“MonaFresh là nơi giúp bạn có thể yên tâm khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ.”</p>
-                <!-- <footer>— Chị Lộc / Mona Media</footer> -->
-            </blockquote>
+                <blockquote>
+                    <img src="upload/img/customer-comment/index_customer_2.jpg" alt="">
+                    <p>“MonaFresh là nơi giúp bạn có thể yên tâm khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ”</p>
+                    <p> <b>  Chị Lộc </b>/ Mona Media</p>
+                </blockquote>
+                <blockquote>
+                    <img src="upload/img/customer-comment/index_customer_3.jpg" alt="">
+                    <p>Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng cà sẽ giới thiệu cho bạn bè mình.”</p>
+                    <p> <b>Chị Thọ </b>/ Mona Media</p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="commitment">
+        <div class="container">
+            <h2>Cam kết của chúng tôi</h2>
+           <div class="commitment-list">
+                <div class="commitment-item">
+                    <img src="upload/img/commit/index_commit_1.jpg" alt="">
+                </div>
+                <div class="commitment-item">
+                    <img src="upload/img/commit/index_commit_2-1.jpg" alt="">
+                </div>
+                <div class="commitment-item">
+                    <img src="upload/img/commit/index_commit_3-1.jpg" alt="">
+                </div>
+                <div class="commitment-item">
+                    <img src="upload/img/commit/index_commit_4.jpg" alt="">
+                </div>
+                <div class="commitment-item">
+                    <img src="upload/img/commit/index_commit_1.jpg" alt="">
+                </div>
+           </div>
         </div>
     </section>
     <script src="./view/js/main.js" type="module"></script>
