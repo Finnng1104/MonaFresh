@@ -1,36 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonaFresh</title>
+    <link rel="stylesheet" href="upload/css/mobile-navigation.css">
+</head>
+<body>
 <section class="hero">
         <div class="hero-content">
             <h1>Tìm mua <span>thực phẩm sạch</span> từ <br> <span>nhà cung cấp uy tín</span> tại đây</h1>
             <button class="btn-buy-now"><a href="#">Mua ngay</a></button>
         </div>
-    </section>
+</section>
 
     <!-- Product Categories -->
     <section class="product-categories">
         <div class="container">
             <h2>Mua sản phẩm được lựa chọn từ vườn</h2>
             <div class="categories">
-                <div class="category">
+                <div class="category-item">
                     <img src="upload/img/categories/cate1.png" alt="Rau củ">
                     <p><a>Rau củ</a></p>
                 </div>
-                <div class="category">
+                <div class="category-item">
                     <img src="upload/img/categories/cate2.png" alt="Hải sản">
                     <p><a>Hải sản</a></p>
                 </div>
-                <div class="category">
+                <div class="category-item">
                     <img src="upload/img/categories/cate3.png" alt="Hải sản">
                     <p><a>Thịt trứng</a></p>
                 </div>
-                <div class="category">
+                <div class="category-item">
                     <img src="upload/img/categories/cate4.png" alt="Hải sản">
                     <p><a>Trái cây</a></p>
                 </div>
-                <div class="category">
+                <div class="category-item">
                     <img src="upload/img/categories/cate5.png" alt="Hải sản">
                     <p><a>Đồ khô</a></p>
                 </div>
-                <div class="category">
+                <div class="category-item">
                     <img src="upload/img/categories/cate6.png" alt="Hải sản">
                     <p><a>Đồ uống</a></p>
                 </div>
@@ -65,7 +74,7 @@
             <button class="see-more">Xem thêm</button>
         </div>
     </section>
-    <section class="featured-products">
+    <section class="featured-products mobile-none">
         <div class="container">
             <h2>Hoa quả tươi ngon</h2>
             <div id="productCategory" class="product-list">
@@ -117,7 +126,7 @@
             </div>
         </div>
     </section>
-    <section class="customer-testimonials">
+    <!-- <section class="customer-testimonials">
         <div class="container">
             <h2>Khách hàng nói gì về MonaFresh</h2>
             <div class="testimonials d-flex">
@@ -138,7 +147,7 @@
                 </blockquote>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="commitment">
         <div class="container">
             <h2>Cam kết của chúng tôi</h2>
@@ -162,3 +171,53 @@
         </div>
     </section>
     <script src="./view/js/main.js" type="module"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('.open-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const sidebar = document.querySelector('.sidebar');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const menuItems = document.querySelectorAll('.menu-item-has-children');
+
+    const searchToggleBtn = document.querySelector('.search-toggle-btn');
+    const searchOverlay = document.querySelector('.search-overlay');
+
+    openBtn.addEventListener('click', () => {
+        sidebar.classList.add('open');
+        menuOverlay.style.opacity = '1';
+        menuOverlay.style.visibility = 'visible';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        menuOverlay.style.opacity = '0';
+        menuOverlay.style.visibility = 'hidden';
+    });
+
+    menuOverlay.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        menuOverlay.style.opacity = '0';
+        menuOverlay.style.visibility = 'hidden';
+    });
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('open');
+        });
+    });
+
+    searchToggleBtn.addEventListener('click', () => {
+        searchOverlay.style.opacity = '1';
+        searchOverlay.style.visibility = 'visible';
+    });
+
+    searchOverlay.addEventListener('click', (e) => {
+        if (e.target === searchOverlay || e.target.classList.contains('search-btn')) {
+            searchOverlay.style.opacity = '0';
+            searchOverlay.style.visibility = 'hidden';
+        }
+    });
+});
+    </script>
+</body>
+</html>

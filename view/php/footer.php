@@ -39,7 +39,7 @@
                     </ul>
                 </nav>
             </section>
-            <section class="footer-item item2">
+            <section class="footer-item item2 d-none">
                 <h2>Dịch vụ</h2>
                 <nav>
                     <ul>
@@ -51,14 +51,17 @@
                     </ul>
                 </nav>
             </section>
-            <section class="footer-item item1">
+            <section class="footer-item item3">
                 <h2>Đăng ký</h2>
                 <p>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</p>
                 <input type="email" placeholder="Email...">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+              
             </section>
         </div>
     </footer>

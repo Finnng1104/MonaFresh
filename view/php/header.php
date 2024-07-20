@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonaFresh</title>
+    <link rel="stylesheet" href="upload/css/mobile-display.css">
+</head>
+<body>
 <header class="header">
         <div class="container">
             <div class="header-top">
@@ -73,28 +82,62 @@
    <header id="header-menu-sticky">
         <div class="container">
             <div class="header-main">
+                <div class="mobile-navigation">
+                <div class="menu-overlay"></div>
+                    <div class="sidebar">
+                        <!-- <button class="close-btn">&times;</button> -->
+                        <ul class="menu">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Cửa hàng</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Rau củ</a></li>
+                                    <li><a href="#">Hải sản</a></li>
+                                    <li><a href="#">Trái cây</a></li>
+                                    <li><a href="#">Đồ uống</a></li>
+                                    <li><a href="#">Đồ khô</a></li>
+                                    <li><a href="#">Thịt trứng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Danh bạ nhà nông</a></li>
+                            <li><a href="#">Kiến thức</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <button class="open-btn">☰</button>
+                </div>
                 <div class="logo">
                     <a href="index.php"><img src="upload/img/logo.png" alt="MonaFresh"></a>
                 </div>
-                    <nav class="navigation">
-                        <ul>
-                            <li><a id="home" href="index.php?page=home">Trang chủ</a></li>
-                            <li><a id="about" href="index.php?page=about">Giới thiệu</a></li>
-                            <li><a id="store" href="index.php?page=store">Cửa hàng</a></li>
-                            <li><a id="directory" href="index.php?page=directory">Danh bạ nhà nông</a></li>
-                            <li><a id="knowledge" href="index.php?page=knowledge">Kiến thức</a></li>
-                            <li><a id="contact" href="index.php?page=contact">Liên hệ</a></li>
-                        </ul>
-                    </nav>
+                <nav class="navigation">
+                    <ul>
+                        <li><a id="home" href="index.php?page=home">Trang chủ</a></li>
+                        <li><a id="about" href="index.php?page=about">Giới thiệu</a></li>
+                        <li><a id="store" href="index.php?page=store">Cửa hàng</a></li>
+                        <li><a id="directory" href="index.php?page=directory">Danh bạ nhà nông</a></li>
+                        <li><a id="knowledge" href="index.php?page=knowledge">Kiến thức</a></li>
+                        <li><a id="contact" href="index.php?page=contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
                 <div class="search">
                     <input type="text" placeholder="Tìm kiếm...">
                     <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="mobile-navigation">
+                <div class="search-overlay">
+                <div class="menu-overlay"></div>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Tìm kiếm..." />
+                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <button class="search-toggle-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
         </div>
    </header>
    <script>
-    // Hàm để thêm lớp active vào mục menu hiện tại
     function setActiveMenu() {
       // Lấy tham số 'page' từ URL
       const urlParams = new URLSearchParams(window.location.search);
@@ -115,3 +158,5 @@
     // Gọi hàm khi trang được tải
     document.addEventListener('DOMContentLoaded', setActiveMenu);
   </script>
+</body>
+</html>
