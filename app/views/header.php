@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MonaFresh</title>
     <link rel="stylesheet" href="upload/css/mobile-display.css">
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 </head>
 <body>
 <header class="header">
