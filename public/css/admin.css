@@ -1,0 +1,152 @@
+/* Sidebar Styles
+.sidebar {
+    background-color: #2b3f66;
+    height: 100%;
+    position: fixed;
+    width: 250px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+.sidebar-wrapper {
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar-wrapper .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.sidebar-wrapper .nav {
+    margin-top: 30px;
+}
+
+.sidebar-wrapper .nav li {
+    margin-bottom: 15px;
+}
+
+.sidebar-wrapper .nav li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.sidebar-wrapper .nav li a:hover {
+    background-color: #405b8e;
+    border-radius: 4px;
+}
+
+.sidebar-wrapper .nav li.active a {
+    background-color: #405b8e;
+    border-radius: 4px;
+}
+
+.main-panel {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-header .navbar-brand {
+    font-size: 24px;
+    color: #2b3f66;
+}
+
+.navbar .navbar-collapse .nav li a {
+    color: #2b3f66;
+}
+
+.navbar .navbar-collapse .nav li a:hover {
+    color: #405b8e;
+}
+
+.navbar .navbar-collapse .nav .dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-responsive {
+    margin: 20px 0;
+}
+
+.table th {
+    color: #2b3f66;
+    font-size: 16px;
+}
+
+.table td {
+    color: #2b3f66;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.table img {
+    border-radius: 4px;
+}
+
+.table a {
+    color: #2b3f66;
+    text-decoration: none;
+}
+
+.table a:hover {
+    color: #405b8e;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 5px;
+}
+
+.pagination-link {
+    color: #2b3f66;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.pagination-link:hover {
+    background-color: #405b8e;
+    color: #fff;
+    border-color: #405b8e;
+}
+
+.footer {
+    background-color: #2b3f66;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
