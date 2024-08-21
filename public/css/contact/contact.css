@@ -92,28 +92,10 @@ textarea {
   padding: 10px 20px;
 }
 
-#banner-item {
-  background-image: url(../../img/Banner/banner-1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0px -365px;
-  width: 100%;
-  background-color: #6ABD42;
-  color: black;
-  font-family: "Muli", sans-serif;
-  text-align: center;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 20px;
-}
-
 .contact-container {
   margin: 0 auto;
-  width: 1300px;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -143,6 +125,12 @@ textarea {
   font-size: 16px;
   margin-bottom: 10px;
   color: #353535;
+}
+.contact-container-infor .contact-info ul li a {
+  color: #353535;
+}
+.contact-container-infor .contact-info ul li a:hover {
+  color: #6ABD42;
 }
 .contact-container-infor .contact-info ul li i {
   margin-right: 10px;

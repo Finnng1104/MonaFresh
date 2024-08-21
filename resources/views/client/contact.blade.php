@@ -15,11 +15,7 @@
     @extends('layout.layout')
 
     @section('content')
-        <div id="banner-item">
-            <h2><b>LIÊN HỆ</b></h2>
-            TRANG CHỦ / <b>LIÊN HỆ</b>
-        </div>
-        <div class="contact-container">
+        <div class="contact-container container">
             <div class="google-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.222066284073!2d106.62368036806588!3d10.853785163716562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b6c59ba4c97%3A0x535e784068f1558b!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1706496866340!5m2!1svi!2s"
@@ -33,12 +29,26 @@
                     </div>
                     <div class="contact-info">
                         <ul>
-                            <li><i class="fas fa-map-marker-alt"></i>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM
                             </li>
-                            <li><i class="fas fa-phone"></i>076 922 0162</li>
-                            <li><i class="fas fa-envelope"></i>demonhunterg@gmail.com</li>
-                            <li><i class="fas fa-envelope"></i>mon@mona.media</li>
-                            <li><i class="fab fa-skype"></i>demonhunterp</li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+84769220162">076 922 0162</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:mon@mona.media">mon@mona.media</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-skype"></i>
+                                <a href="skype:demonhunterp?call">demonhunterp</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

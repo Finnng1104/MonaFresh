@@ -12,7 +12,6 @@ a{
     width: 90%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 20px;
 
 }
 .header-top {
@@ -24,9 +23,9 @@ a{
     a{
         color: #666666D9;
         font-size: 14px;
-    }
-    a:hover{
-        color: black;
+        &:hover {
+            color: #6ABD42;
+        }
     }
     .separator {
         height: 20px;
@@ -76,6 +75,7 @@ a{
     z-index: 100;
     background-color: #ffffff; /* Đặt màu nền nếu cần thiết */
     opacity: 0.9;
+  
 }
 .header-main{
     display: flex;

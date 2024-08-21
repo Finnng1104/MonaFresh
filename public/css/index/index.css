@@ -14,7 +14,6 @@ a {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .hero .hero-content {
@@ -306,6 +305,7 @@ a {
 @media (max-width: 1220px) {
   .container {
     width: 100%;
+    padding: 0 30px;
   }
 }
 @media (max-width: 1080px) {
