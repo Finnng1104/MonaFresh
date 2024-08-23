@@ -74,7 +74,70 @@
         <section class="featured-products">
             <div class="container">
                 <h2>Sản phẩm nổi bật</h2>
-                <div id="topSellProduct" class="product-list">
+                <div class="product-list pc-interface">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
                     <div class="product">
                         <div class="product-img">
                             <img src="{{ asset('/img/product/bosap.jpeg') }}">
@@ -151,6 +214,101 @@
                     </div>
                 @endforeach --}}
                 </div>
+                <div class="product-list mobile-interface">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    {{-- @foreach ($data as $product)
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/' . $product->image) }}" alt="{{ $product->name }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>{{ $product->name }}</h3>
+                            <p>{{ number_format($product->price, 0, ',', '.') }}₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                @endforeach --}}
+                </div>
                 <button class="see-more">Xem thêm</button>
             </div>
         </section>
@@ -158,6 +316,69 @@
             <div class="container">
                 <h2>Hoa quả tươi ngon</h2>
                 <div id="productCategory" class="product-list">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>1.000.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
                     <div class="product">
                         <div class="product-img">
                             <img src="{{ asset('/img/product/bosap.jpeg') }}">
@@ -287,27 +508,27 @@
             </div>
         </section>
         <!-- <section class="customer-testimonials">
-                                                                                <div class="container">
-                                                                                    <h2>Khách hàng nói gì về MonaFresh</h2>
-                                                                                    <div class="testimonials d-flex">
-                                                                                        <blockquote>
-                                                                                            <img src="public/img/customer-comment/customer1.jpg" alt="">
-                                                                                            <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”</p>
-                                                                                            <p> <b>Chị Phúc </b>/ Mona Media</p>
-                                                                                        </blockquote>
-                                                                                        <blockquote>
-                                                                                            <img src="public/img/customer-comment/index_customer_2.jpg" alt="">
-                                                                                            <p>“MonaFresh là nơi giúp bạn có thể yên tâm khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ”</p>
-                                                                                            <p> <b>  Chị Lộc </b>/ Mona Media</p>
-                                                                                        </blockquote>
-                                                                                        <blockquote>
-                                                                                            <img src="public/img/customer-comment/index_customer_3.jpg" alt="">
-                                                                                            <p>Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng cà sẽ giới thiệu cho bạn bè mình.”</p>
-                                                                                            <p> <b>Chị Thọ </b>/ Mona Media</p>
-                                                                                        </blockquote>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </section> -->
+                                                                                                                <div class="container">
+                                                                                                                    <h2>Khách hàng nói gì về MonaFresh</h2>
+                                                                                                                    <div class="testimonials d-flex">
+                                                                                                                        <blockquote>
+                                                                                                                            <img src="public/img/customer-comment/customer1.jpg" alt="">
+                                                                                                                            <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”</p>
+                                                                                                                            <p> <b>Chị Phúc </b>/ Mona Media</p>
+                                                                                                                        </blockquote>
+                                                                                                                        <blockquote>
+                                                                                                                            <img src="public/img/customer-comment/index_customer_2.jpg" alt="">
+                                                                                                                            <p>“MonaFresh là nơi giúp bạn có thể yên tâm khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ”</p>
+                                                                                                                            <p> <b>  Chị Lộc </b>/ Mona Media</p>
+                                                                                                                        </blockquote>
+                                                                                                                        <blockquote>
+                                                                                                                            <img src="public/img/customer-comment/index_customer_3.jpg" alt="">
+                                                                                                                            <p>Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng cà sẽ giới thiệu cho bạn bè mình.”</p>
+                                                                                                                            <p> <b>Chị Thọ </b>/ Mona Media</p>
+                                                                                                                        </blockquote>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </section> -->
         <section class="commitment">
             <div class="container">
                 <h2>Cam kết của chúng tôi</h2>
