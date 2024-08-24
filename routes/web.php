@@ -10,9 +10,9 @@ Route::get('/about', function () {
     return view('client.about'); // Giới thiệu
 })->name('about');
 
-Route::get('/store', function () {
-    return view('client.store'); // Cửa hàng
-})->name('store');
+Route::get('/product', function () {
+    return view('client.product'); // Cửa hàng
+})->name('product');
 
 Route::get('/directory', function () {
     return view('client.directory'); // Danh bạ nhà nông

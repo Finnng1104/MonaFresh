@@ -34,8 +34,8 @@
         <li class="{{ request()->is('about') ? 'active' : '' }}">
             <a href="{{ route('about') }}">Giới thiệu</a>
         </li>
-        <li class="{{ request()->is('store') ? 'active' : '' }}">
-            <a href="{{ route('store') }}">Cửa hàng</a>
+        <li class="{{ request()->is('product') ? 'active' : '' }}">
+            <a href="{{ route('product') }}">Cửa hàng</a>
         </li>
         <li class="{{ request()->is('directory') ? 'active' : '' }}">
             <a href="{{ route('directory') }}">Danh bạ nhà nông</a>
