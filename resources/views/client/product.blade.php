@@ -15,10 +15,10 @@
 <body>
     @extends('layout.layout')
     @section('content')
-        <div class="banner-item">
+        {{-- <div class="banner-item">
             <h2><b>SẢN PHẨM</b></h2>
             TRANG CHỦ / <b>SẢN PHẨM</b>
-        </div>
+        </div> --}}
         <div class="container">
             <section class="store-header d-flex">
                 <div class="store-header-left">
@@ -46,6 +46,18 @@
                         <li class="category-item" onclick="setActive(this)">Đồ khô</li>
                         <li class="category-item color" onclick="setActive(this)">Thịt trứng</li>
                     </ul>
+                    <div class="filter-section">
+                        <h2 class="filter-title">LỌC THEO GIÁ</h2>
+                        <div class="filter-content">
+                            <input type="range" id="price-range" min="29000" max="235000" value="29000"
+                                step="1000" oninput="updatePriceRange(this.value)">
+                            <div class="filter-actions">
+                                <button onclick="filterProducts()">Lọc</button>
+                                <p id="price-value">Giá: <span id="min-price">29,000đ</span> - <span
+                                        id="max-price">235,000đ</span></p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <div class="product-list pc-interface">
                     <div class="product">
@@ -69,48 +81,7 @@
                             <button>Thêm vào giỏ</button>
                         </div>
                     </div>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
-                        </div>
-                        <div class="product-content">
-                            <h3>Tên sản phẩm</h3>
-                            <p>1.000.000₫</p>
-                            <button>Thêm vào giỏ</button>
-                        </div>
-                    </div>
 
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
-                        </div>
-                        <div class="product-content">
-                            <h3>Tên sản phẩm</h3>
-                            <p>500.000₫</p>
-                            <button>Thêm vào giỏ</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
-                        </div>
-                        <div class="product-content">
-                            <h3>Tên sản phẩm</h3>
-                            <p>1.000.000₫</p>
-                            <button>Thêm vào giỏ</button>
-                        </div>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
-                        </div>
-                        <div class="product-content">
-                            <h3>Tên sản phẩm</h3>
-                            <p>500.000₫</p>
-                            <button>Thêm vào giỏ</button>
-                        </div>
-                    </div>
                     <div class="product">
                         <div class="product-img">
                             <img src="{{ asset('/img/product/bosap.jpeg') }}">
@@ -192,6 +163,14 @@
         </div>
     @endsection
     <script>
+        function updatePriceRange(value) {
+            document.getElementById('min-price').textContent = new Intl.NumberFormat('vi-VN').format(value) + ' đ';
+        }
+
+        function filterProducts() {
+            alert('Lọc sản phẩm theo giá');
+        }
+
         function setActive(element) {
             // Loại bỏ lớp 'active' khỏi tất cả các mục
             var items = document.querySelectorAll('.category-item');
