@@ -24,6 +24,7 @@
                 <div class="store-header-left">
                     TRANG CHỦ / <b>SẢN PHẨM</b>
                 </div>
+                <span class="toggle-sidebar">&#9776; LỌC</span>
                 <div class="store-header-right">
                     <span>Hiển thị một kết quả duy nhất</span>
                     <select name="sort" id="sort">
@@ -38,6 +39,7 @@
             </section>
             <div class="store-infor">
                 <section class="category-section">
+
                     <h2 class="category-title">DANH MỤC <span>SẢN PHẨM</span></h2>
                     <ul class="category-list">
                         <li class="category-item color" onclick="setActive(this)">Rau củ</li>
@@ -163,6 +165,17 @@
         </div>
     @endsection
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var toggleSidebar = document.querySelector('.toggle-sidebar');
+            var categorySection = document.querySelector('.category-section');
+
+            if (toggleSidebar && categorySection) {
+                toggleSidebar.addEventListener('click', function() {
+                    categorySection.classList.toggle('active');
+                });
+            }
+        });
+
         function updatePriceRange(value) {
             document.getElementById('min-price').textContent = new Intl.NumberFormat('vi-VN').format(value) + ' đ';
         }

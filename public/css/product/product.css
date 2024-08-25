@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .d-flex {
   display: flex;
 }
@@ -44,6 +45,12 @@
   margin: 0;
   padding: 20px 30px;
   border-bottom: 2px solid #f5f5f5;
+}
+@media (max-width: 1310px) {
+  .store-infor .category-section .category-title span {
+    display: block;
+    margin-top: 5px;
+  }
 }
 .store-infor .category-section .category-list {
   list-style-type: none;
@@ -121,7 +128,7 @@
 }
 .store-infor .filter-section .filter-actions #price-value {
   color: #333;
-  margin-left: 10px;
+  text-align: right;
 }
 .store-infor .filter-section .filter-actions #price-value span {
   font-weight: bold;
@@ -132,6 +139,11 @@
   gap: 20px;
   width: 70%;
   margin-bottom: 20px;
+}
+@media (max-width: 1050px) {
+  .store-infor .product-list {
+    width: 100%;
+  }
 }
 .store-infor .product-list .product {
   background-color: #fff;
@@ -185,9 +197,47 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 1310px) {
-  span {
-    display: block;
-    margin-top: 5px;
+/* CSS cho giao diện mobile */
+@media (max-width: 1050px) {
+  .category-section {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 350px;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 60px;
+    overflow-y: auto;
+  }
+  .category-section.active {
+    left: 0;
+  }
+  .toggle-sidebar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    font-size: 24px;
+    color: #8DA242;
+    cursor: pointer;
+  }
+}
+/* CSS cho giao diện máy tính */
+@media (min-width: 1050px) {
+  .category-section {
+    position: relative;
+    left: 0;
+    top: auto;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 0;
+  }
+  .toggle-sidebar {
+    display: none;
   }
 }/*# sourceMappingURL=product.css.map */
