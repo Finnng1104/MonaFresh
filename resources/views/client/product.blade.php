@@ -38,6 +38,7 @@
                 </div>
             </section>
             <div class="store-infor">
+                <div class="overlay"></div>
                 <section class="category-section">
 
                     <h2 class="category-title">DANH MỤC <span>SẢN PHẨM</span></h2>
@@ -168,13 +169,36 @@
         document.addEventListener("DOMContentLoaded", function() {
             var toggleSidebar = document.querySelector('.toggle-sidebar');
             var categorySection = document.querySelector('.category-section');
+            var overlay = document.querySelector('.overlay');
 
-            if (toggleSidebar && categorySection) {
+            if (toggleSidebar && categorySection && overlay) {
                 toggleSidebar.addEventListener('click', function() {
                     categorySection.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+
+                overlay.addEventListener('click', function() {
+                    categorySection.classList.remove('active');
+                    overlay.classList.remove('active');
                 });
             }
         });
+
+        function updatePriceRange(value) {
+            document.getElementById('min-price').textContent = new Intl.NumberFormat('vi-VN').format(value) + ' đ';
+        }
+
+        function filterProducts() {
+            alert('Lọc sản phẩm theo giá');
+        }
+
+        function setActive(element) {
+            var items = document.querySelectorAll('.category-item');
+            items.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
 
         function updatePriceRange(value) {
             document.getElementById('min-price').textContent = new Intl.NumberFormat('vi-VN').format(value) + ' đ';

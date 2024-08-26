@@ -24,6 +24,23 @@
   display: flex;
   justify-content: space-between;
   margin: 40px 0;
+  /* Overlay */
+}
+.store-infor .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen với độ trong suốt */
+  z-index: 999; /* Đảm bảo overlay nằm trên cùng */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.store-infor .category-section.active ~ .overlay {
+  opacity: 1;
+  visibility: visible;
 }
 .store-infor .category-section {
   width: 25%;
@@ -199,12 +216,12 @@
 
 /* CSS cho giao diện mobile */
 @media (max-width: 1050px) {
-  .category-section {
+  .store-infor .category-section {
     position: fixed;
     left: -100%;
     top: 0;
     height: 100%;
-    width: 350px;
+    width: 250px;
     background-color: #ffffff;
     z-index: 1000;
     transition: left 0.3s ease-in-out;
@@ -212,10 +229,10 @@
     padding-top: 60px;
     overflow-y: auto;
   }
-  .category-section.active {
+  .store-infor .category-section.active {
     left: 0;
   }
-  .toggle-sidebar {
+  .store-infor .toggle-sidebar {
     position: absolute;
     top: 15px;
     left: 15px;
