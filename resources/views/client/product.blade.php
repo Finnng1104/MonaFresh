@@ -15,10 +15,6 @@
 <body>
     @extends('layout.layout')
     @section('content')
-        {{-- <div class="banner-item">
-            <h2><b>SẢN PHẨM</b></h2>
-            TRANG CHỦ / <b>SẢN PHẨM</b>
-        </div> --}}
         <div class="container">
             <section class="store-header d-flex">
                 <div class="store-header-left">
@@ -166,22 +162,24 @@
         </div>
     @endsection
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var toggleSidebar = document.querySelector('.toggle-sidebar');
-            var categorySection = document.querySelector('.category-section');
-            var overlay = document.querySelector('.overlay');
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidebar = document.querySelector('.category-section');
+            const overlay = document.querySelector('.overlay');
+            const toggleSidebar = document.querySelector('.toggle-sidebar');
 
-            if (toggleSidebar && categorySection && overlay) {
-                toggleSidebar.addEventListener('click', function() {
-                    categorySection.classList.toggle('active');
-                    overlay.classList.toggle('active');
-                });
+            // Mở sidebar và hiển thị overlay
+            toggleSidebar.addEventListener('click', () => {
+                sidebar.classList.add('active');
+                overlay.style.opacity = '1';
+                overlay.style.visibility = 'visible';
+            });
 
-                overlay.addEventListener('click', function() {
-                    categorySection.classList.remove('active');
-                    overlay.classList.remove('active');
-                });
-            }
+            // Đóng sidebar và ẩn overlay
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+                overlay.style.opacity = '0';
+                overlay.style.visibility = 'hidden';
+            });
         });
 
         function updatePriceRange(value) {
