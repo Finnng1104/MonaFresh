@@ -22,7 +22,7 @@
                 </div>
                 <span class="toggle-sidebar">&#9776; LỌC</span>
                 <div class="store-header-right">
-                    <span>Hiển thị một kết quả duy nhất</span>
+                    <span class="title-filter">Hiển thị một kết quả duy nhất</span>
                     <select name="sort" id="sort">
                         <option value="0">Thứ tự mặc định</option>
                         <option value="1">Thứ tự theo mức độ phổ biến</option>
@@ -134,6 +134,16 @@
                         </div>
                     </div>
 
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="{{ asset('/img/product/bosap.jpeg') }}">
+                        </div>
+                        <div class="product-content">
+                            <h3>Tên sản phẩm</h3>
+                            <p>500.000₫</p>
+                            <button>Thêm vào giỏ</button>
+                        </div>
+                    </div>
                     <div class="product">
                         <div class="product-img">
                             <img src="{{ asset('/img/product/bosap.jpeg') }}">
