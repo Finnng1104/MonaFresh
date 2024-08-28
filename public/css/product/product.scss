@@ -253,7 +253,7 @@
             top: 0;
             height: 100%;
             width: 40%;
-            min-width: 230px;
+            min-width: 300px;
             background-color: #ffffff;
             z-index: 1000;
             transition: left 0.3s ease-in-out;
@@ -295,15 +295,6 @@
         .product-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-        }
-    }
-}
-@media (max-width: 430px){
-    
-    .store-infor{
-        .product-list {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
