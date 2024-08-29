@@ -307,16 +307,6 @@ footer{
         padding: 0 30px;
     }
 }
-@media (max-width: 1080px) {
-    .product-categories{
-        .categories{
-            justify-content: center;
-            .category-item{
-                width: 25%;
-            }
-        }
-    }
-}
 @media (max-width: 950px) {
     footer{
         .item1{

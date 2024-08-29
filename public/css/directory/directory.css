@@ -1,0 +1,85 @@
+#directory {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 10%;
+  min-width: 250px;
+}
+.sidebar .search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+.sidebar .search-bar input[type=text] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+.sidebar .search-bar button {
+  padding: 10px 15px;
+  background-color: #6ABD42;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.sidebar .search-bar button i {
+  font-size: 16px;
+}
+.sidebar .category-section {
+  border-radius: 10px 10px 0 0;
+  font-size: 14px;
+  overflow: hidden;
+  border: 1px solid #F8F8F8;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.sidebar .category-section h2 {
+  font-weight: 100;
+  font-size: 20px;
+}
+.sidebar .category-section .category-title {
+  background-color: #6ABD42;
+  color: white;
+  text-align: left;
+  margin: 0;
+  padding: 20px 30px;
+  border-bottom: 2px solid #f5f5f5;
+}
+.sidebar .recent-posts {
+  list-style-type: none;
+  padding: 0px;
+}
+.sidebar .recent-posts li {
+  display: flex;
+  padding: 15px 20px;
+  border: 1px solid silver;
+  border-top: none;
+}
+.sidebar .recent-posts li img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.sidebar .recent-posts li a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.sidebar .recent-posts li:hover, .sidebar .recent-posts li.active {
+  background-color: #6ABD42;
+}
+.sidebar .recent-posts li:hover a, .sidebar .recent-posts li.active a {
+  color: white;
+}
+.sidebar .recent-posts .color {
+  background-color: #F8F8F8;
+}/*# sourceMappingURL=directory.css.map */
