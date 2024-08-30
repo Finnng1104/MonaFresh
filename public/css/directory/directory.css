@@ -3,6 +3,13 @@
   justify-content: space-between;
 }
 
+h1 {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 100;
+  padding: 20px 0;
+}
+
 .sidebar {
   width: 10%;
   min-width: 250px;
