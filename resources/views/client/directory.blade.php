@@ -55,61 +55,51 @@
             </div>
 
             <div class="main-content">
-
-                <div class="articles-grid">
-                    <div class="article">
-                        <img src="path_to_article_image1.jpg" alt="Nấm vân chi có tác dụng gì?">
+                <div class="directory-grid">
+                    <div class="company-card">
+                        <img src="{{ asset('img/congty/logo-1-300x144.png') }}" alt="Công ty Thực Phẩm Tâm Minh">
                         <div class="date">
-                            <span>16</span>
+                            <span>15</span>
                             <span>Th5</span>
                         </div>
-                        <h3><a href="#">Nấm vân chi có tác dụng gì?</a></h3>
-                        <p>Cách đây hơn 2000 năm, nấm vân chi rừng đã được biết đến và sử dụng...</p>
+                        <h3>Công ty Thực Phẩm Tâm Minh</h3>
+                        <p>Công ty TNHH Thực phẩm Tâm Minh có sản xuất Bột nêm Ngưu...</p>
                     </div>
-                    <div class="article">
-                        <img src="path_to_article_image2.jpg" alt="Chả cốm ăn với gì ngon">
+                    <div class="company-card">
+                        <img src="path_to_image2.jpg" alt="Công Ty Thiên Nhiên Việt">
                         <div class="date">
-                            <span>16</span>
+                            <span>15</span>
                             <span>Th5</span>
                         </div>
-                        <h3><a href="#">Chả cốm ăn với gì ngon?</a></h3>
-                        <p>Bánh giò Bánh giò là một loại bánh được làm từ bột gạo tẻ...</p>
+                        <h3>Công Ty Thiên Nhiên Việt</h3>
+                        <p>Công ty TNHH Xuất Nhập Khẩu Thiên Nhiên Việt chuyên về sản xu...</p>
                     </div>
-                    <div class="article">
-                        <img src="path_to_article_image3.jpg" alt="Cốm tươi làm món gì ngon?">
+                    <div class="company-card">
+                        <img src="path_to_image3.jpg" alt="Binca Việt Nam">
                         <div class="date">
-                            <span>16</span>
+                            <span>15</span>
                             <span>Th5</span>
                         </div>
-                        <h3><a href="#">Cốm tươi làm món gì ngon?</a></h3>
-                        <p>Cốm tươi làm món gì ngon Dùng cốm tươi làm món gì, cốm tươi có...</p>
+                        <h3>Binca Việt Nam</h3>
+                        <p>Chính thức bước vào thị trường Việt Nam vào năm 1998, sau hơn 7 n...</p>
                     </div>
-                    <div class="article">
-                        <img src="path_to_article_image4.jpg" alt="Cách làm măng tây xào tỏi">
+                    <div class="company-card">
+                        <img src="path_to_image4.jpg" alt="Antofu Việt Nam">
                         <div class="date">
-                            <span>16</span>
+                            <span>15</span>
                             <span>Th5</span>
                         </div>
-                        <h3><a href="#">Cách làm măng tây xào tỏi</a></h3>
-                        <p>Nguyên liệu cần để nấu món măng tây xào tỏi 500g măng tây xanh 2...</p>
+                        <h3>Antofu Việt Nam</h3>
+                        <p>Antofu Việt Nam là công ty được đầu tư với 100% nguồn vốn và công...</p>
                     </div>
-                    <div class="article">
-                        <img src="path_to_article_image5.jpg" alt="Súp lơ xanh nấu món gì ngon?">
+                    <div class="company-card">
+                        <img src="path_to_image5.jpg" alt="An Mộc Farm">
                         <div class="date">
-                            <span>16</span>
+                            <span>15</span>
                             <span>Th5</span>
                         </div>
-                        <h3><a href="#">Súp lơ xanh nấu món gì ngon?</a></h3>
-                        <p>Súp lơ xanh xào gà Nguyên liệu cần để nấu 600g ức gà; 250g súp lơ xanh...</p>
-                    </div>
-                    <div class="article">
-                        <img src="path_to_article_image6.jpg" alt="Yến mạch là gì?">
-                        <div class="date">
-                            <span>16</span>
-                            <span>Th5</span>
-                        </div>
-                        <h3><a href="#">Yến mạch là gì?</a></h3>
-                        <p>Yến mạch là gì? Yến mạch là một loại ngũ cốc, thường được trồng ở...</p>
+                        <h3>An Mộc Farm</h3>
+                        <p>An Mộc Farm – Trang trại thuần nông chuyên cung cấp 100% thự...</p>
                     </div>
                 </div>
             </div>
