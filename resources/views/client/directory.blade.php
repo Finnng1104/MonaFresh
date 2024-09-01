@@ -66,7 +66,7 @@
                         <p>Công ty TNHH Thực phẩm Tâm Minh có sản xuất Bột nêm Ngưu...</p>
                     </div>
                     <div class="company-card">
-                        <img src="path_to_image2.jpg" alt="Công Ty Thiên Nhiên Việt">
+                        <img src="{{ asset('img/congty/logo-1-300x144.png') }}" alt="Công ty Thực Phẩm Tâm Minh">
                         <div class="date">
                             <span>15</span>
                             <span>Th5</span>
@@ -74,8 +74,8 @@
                         <h3>Công Ty Thiên Nhiên Việt</h3>
                         <p>Công ty TNHH Xuất Nhập Khẩu Thiên Nhiên Việt chuyên về sản xu...</p>
                     </div>
-                    <div class="company-card">
-                        <img src="path_to_image3.jpg" alt="Binca Việt Nam">
+                    <div class="company-card"> <img src="{{ asset('img/congty/logo-1-300x144.png') }}"
+                            alt="Công ty Thực Phẩm Tâm Minh">
                         <div class="date">
                             <span>15</span>
                             <span>Th5</span>
@@ -83,8 +83,8 @@
                         <h3>Binca Việt Nam</h3>
                         <p>Chính thức bước vào thị trường Việt Nam vào năm 1998, sau hơn 7 n...</p>
                     </div>
-                    <div class="company-card">
-                        <img src="path_to_image4.jpg" alt="Antofu Việt Nam">
+                    <div class="company-card"> <img src="{{ asset('img/congty/logo-1-300x144.png') }}"
+                            alt="Công ty Thực Phẩm Tâm Minh">
                         <div class="date">
                             <span>15</span>
                             <span>Th5</span>
@@ -93,7 +93,7 @@
                         <p>Antofu Việt Nam là công ty được đầu tư với 100% nguồn vốn và công...</p>
                     </div>
                     <div class="company-card">
-                        <img src="path_to_image5.jpg" alt="An Mộc Farm">
+                        <img src="{{ asset('img/congty/logo-1-300x144.png') }}" alt="Công ty Thực Phẩm Tâm Minh">
                         <div class="date">
                             <span>15</span>
                             <span>Th5</span>
