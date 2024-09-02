@@ -15,11 +15,16 @@ h1 {
     padding: 20px 0;
 }
 
-.sidebar {
+.sidebar-directory {
     width: 10%;
     min-width: 250px;
-
-    .search-bar {
+    @media (max-width: 1100px) {
+        min-width: 220px;
+    }
+      @media (max-width: 1050px) {
+        display: none;
+    }
+    .search-directory {
         display: flex;
         margin-bottom: 20px;
 
@@ -110,6 +115,9 @@ h1 {
 }
 .main-content{
     width: 75%;
+      @media (max-width: 1050px) {
+        width: 100%;
+    }
 }
 .page-title {
     text-align: center;

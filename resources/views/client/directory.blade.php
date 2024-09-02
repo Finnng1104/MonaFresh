@@ -8,6 +8,7 @@
     <title>Mona Fresh</title>
     <link rel="stylesheet" href="{{ asset('css/layout/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('css/directory/directory.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mobile-interface/mobile-navigation.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -17,8 +18,8 @@
     @section('content')
         <h1>DANH BẠN NHÀ NÔNG</h1>
         <div class="container" id="directory">
-            <div class="sidebar">
-                <div class="search-bar">
+            <div class="sidebar-directory">
+                <div class="search-directory">
                     <input type="text" placeholder="Tìm kiếm...">
                     <button><i class="fas fa-search"></i></button>
                 </div>
