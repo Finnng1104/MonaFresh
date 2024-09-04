@@ -6,10 +6,6 @@ Route::get('/', function () {
     return view('index'); // Trang chủ
 })->name('home');
 
-Route::get('/about', function () {
-    return view('client.about'); // Giới thiệu
-})->name('about');
-
 Route::get('/product', function () {
     return view('client.product'); // Cửa hàng
 })->name('product');

@@ -123,6 +123,7 @@ a{
         display: flex;
         align-items: center;
         position: relative;
+        margin-left: 20px;
         input{
             padding: 8px 10px;
             border: 1px solid #ccc;
@@ -293,7 +294,7 @@ footer{
        }
     }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1150px) {
     .header-main{
         .search{
             display: none;
@@ -337,22 +338,20 @@ footer{
         }
     }
 }
-
-@media (max-width: 850px) {
-    .featured-products {
-        .product-list {
-            .product {
-                width: 24%;
-            }
-        }
-        .pc-interface{
-            display: none;
-        }
-        .mobile-interface{
-            display: flex;
-        }
+@media (max-width: 955px) {
+    .pc-interface{
+        display: none;
+    }
+    .mobile-interface{
+        display: flex;
     }
     .mobile-none{
+        display: none;
+    }
+    .mobile-navigation{
+        display: block;
+    }
+    .header-top{
         display: none;
     }
     #header-menu-sticky{
@@ -368,6 +367,31 @@ footer{
             }
         }
 
+    }
+    .product-categories{
+        .categories{
+            justify-content: center;
+            .category-item{
+                width: 33%;
+            }
+        }
+    }
+    .header-main{
+        height: fit-content;
+        padding: 30px 0 40px 0;
+        .search-toggle-btn{
+            padding-top: 10px;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .featured-products {
+        .product-list {
+            .product {
+                width: 24%;
+            }
+        }
+       
     }
     .promotion-categories{
         .categories{
@@ -388,30 +412,6 @@ footer{
             }
         }
     }
-}
-@media (max-width: 850px){
-    .product-categories{
-        .categories{
-            justify-content: center;
-            .category-item{
-                width: 33%;
-            }
-        }
-    }
-    .mobile-navigation{
-        display: block;
-    }
-    .header-top{
-        display: none;
-    }
-    .header-main{
-        height: fit-content;
-        padding: 30px 0 40px 0;
-        .search-toggle-btn{
-            padding-top: 10px;
-        }
-    }
-
 }
 @media (max-width: 600px) {
     * {

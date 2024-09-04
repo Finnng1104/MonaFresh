@@ -16,7 +16,7 @@
     @extends('layout.layout')
 
     @section('content')
-        <h1>DANH BẠN NHÀ NÔNG</h1>
+        <h1>KIẾN THỨC</h1>
         <div class="container" id="directory">
             <div class="sidebar-directory">
                 <div class="search-directory">

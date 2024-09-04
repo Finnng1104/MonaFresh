@@ -31,9 +31,6 @@
         <li class="{{ request()->is('/') ? 'active' : '' }}">
             <a href="{{ route('home') }}">Trang chủ</a>
         </li>
-        <li class="{{ request()->is('about') ? 'active' : '' }}">
-            <a href="{{ route('about') }}">Giới thiệu</a>
-        </li>
         <li class="{{ request()->is('product') ? 'active' : '' }}">
             <a href="{{ route('product') }}">Cửa hàng</a>
         </li>
@@ -47,11 +44,12 @@
             <a href="{{ route('contact') }}">Liên hệ</a>
         </li>
     </ul>
+    <div class="search">
+        <input type="text" placeholder="Tìm kiếm...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
 </nav>
-<div class="search">
-    <input type="text" placeholder="Tìm kiếm...">
-    <i class="fa-solid fa-magnifying-glass"></i>
-</div>
+
 <div class="mobile-navigation">
     <div class="search-overlay">
         <div class="menu-overlay"></div>

@@ -125,6 +125,7 @@ a {
   display: flex;
   align-items: center;
   position: relative;
+  margin-left: 20px;
 }
 .header-main .search input {
   padding: 8px 10px;
@@ -288,7 +289,7 @@ footer address i {
   margin-right: 10px;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1150px) {
   .header-main .search {
     display: none;
   }
@@ -325,17 +326,20 @@ footer address i {
     margin-right: 10px;
   }
 }
-@media (max-width: 850px) {
-  .featured-products .product-list .product {
-    width: 24%;
-  }
-  .featured-products .pc-interface {
+@media (max-width: 955px) {
+  .pc-interface {
     display: none;
   }
-  .featured-products .mobile-interface {
+  .mobile-interface {
     display: flex;
   }
   .mobile-none {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+  }
+  .header-top {
     display: none;
   }
   #header-menu-sticky .header-main {
@@ -348,6 +352,25 @@ footer address i {
   }
   #header-menu-sticky .header-main .navigation {
     display: none;
+  }
+  .product-categories .categories {
+    justify-content: center;
+  }
+  .product-categories .categories .category-item {
+    width: 33%;
+  }
+  .header-main {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px 0 40px 0;
+  }
+  .header-main .search-toggle-btn {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 850px) {
+  .featured-products .product-list .product {
+    width: 24%;
   }
   .promotion-categories .categories {
     justify-content: space-between;
@@ -362,28 +385,6 @@ footer address i {
   .blogs .blog-list .blog-item {
     width: 48%;
     margin-bottom: 30px;
-  }
-}
-@media (max-width: 850px) {
-  .product-categories .categories {
-    justify-content: center;
-  }
-  .product-categories .categories .category-item {
-    width: 33%;
-  }
-  .mobile-navigation {
-    display: block;
-  }
-  .header-top {
-    display: none;
-  }
-  .header-main {
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 30px 0 40px 0;
-  }
-  .header-main .search-toggle-btn {
-    padding-top: 10px;
   }
 }
 @media (max-width: 600px) {
