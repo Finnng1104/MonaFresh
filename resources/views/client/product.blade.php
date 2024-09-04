@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="{{ asset('css/product/product.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mobile-interface/mobile-navigation.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
     @extends('layout.layout')
     @section('content')
         <div class="container">
-            <section class="store-header d-flex">
+            <section class="store-header d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
                 <div class="store-header-left">
                     TRANG CHỦ / <b>SẢN PHẨM</b>
                 </div>
@@ -33,7 +34,7 @@
                     </select>
                 </div>
             </section>
-            <div class="store-infor">
+            <div class="store-infor" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
                 <div class="overlay"></div>
                 <section class="category-section">
 
@@ -226,6 +227,10 @@
             // Thêm lớp 'active' vào mục được click
             element.classList.add('active');
         }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

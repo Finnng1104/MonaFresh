@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/layout/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('css/index/index.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mobile-interface/mobile-navigation.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </section>
         <!-- Product Categories -->
         <section class="product-categories">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
                 <h2>Mua sản phẩm được lựa chọn từ vườn</h2>
                 <div class="categories">
                     <div class="category-item">
@@ -52,7 +53,7 @@
 
                 </div>
         </section>
-        <section class="promotion-categories">
+        <section class="promotion-categories" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="container">
                 <h2>Chương trình khuyến mãi</h2>
                 <div class="categories">
@@ -71,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="featured-products">
+        <section class="featured-products" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="container">
                 <h2>Sản phẩm nổi bật</h2>
                 <div class="product-list pc-interface">
@@ -312,7 +313,7 @@
                 <button class="see-more">Xem thêm</button>
             </div>
         </section>
-        <section class="featured-products mobile-none">
+        <section class="featured-products mobile-none" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="container">
                 <h2>Hoa quả tươi ngon</h2>
                 <div id="productCategory" class="product-list">
@@ -458,7 +459,7 @@
                 <button class="see-more">Xem thêm</button>
             </div>
         </section>
-        <section class="blogs">
+        <section class="blogs" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="container">
                 <h2>Hành trình Organic bắt đầu từ đây</h2>
                 <div class="blog-list">
@@ -507,29 +508,34 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="customer-testimonials">
-                                                                                                                                <div class="container">
-                                                                                                                                    <h2>Khách hàng nói gì về MonaFresh</h2>
-                                                                                                                                    <div class="testimonials d-flex">
-                                                                                                                                        <blockquote>
-                                                                                                                                            <img src="public/img/customer-comment/customer1.jpg" alt="">
-                                                                                                                                            <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”</p>
-                                                                                                                                            <p> <b>Chị Phúc </b>/ Mona Media</p>
-                                                                                                                                        </blockquote>
-                                                                                                                                        <blockquote>
-                                                                                                                                            <img src="public/img/customer-comment/index_customer_2.jpg" alt="">
-                                                                                                                                            <p>“MonaFresh là nơi giúp bạn có thể yên tâm khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ”</p>
-                                                                                                                                            <p> <b>  Chị Lộc </b>/ Mona Media</p>
-                                                                                                                                        </blockquote>
-                                                                                                                                        <blockquote>
-                                                                                                                                            <img src="public/img/customer-comment/index_customer_3.jpg" alt="">
-                                                                                                                                            <p>Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng cà sẽ giới thiệu cho bạn bè mình.”</p>
-                                                                                                                                            <p> <b>Chị Thọ </b>/ Mona Media</p>
-                                                                                                                                        </blockquote>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </section> -->
-        <section class="commitment">
+        <section class="customer-testimonials">
+            <div class="testimonials-background"></div>
+            <div class="testimonials-content">
+                <h2>Khách hàng nói gì về MonaFresh</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <img src="{{ asset('/img/blogs/news_4.jpg') }}" alt="Chị Phúc">
+                        <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới
+                            thiệu cho bạn bè mình.”</p>
+                        <h4>Chị Phúc / Mona Media</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="{{ asset('/img/blogs/news_4.jpg') }}" alt="Chị Lộc">
+                        <p>“MonaFresh là nơi giúp bạn có thể yên tâm khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu
+                            cơ.”</p>
+                        <h4>Chị Lộc / Mona Media</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="{{ asset('/img/blogs/news_4.jpg') }}" alt="Chị Thọ">
+                        <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. Mình rất hài lòng và sẽ giới
+                            thiệu cho bạn bè mình.”</p>
+                        <h4>Chị Thọ / Mona Media</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section> -->
+        <section class="commitment" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="container">
                 <h2>Cam kết của chúng tôi</h2>
                 <div class="commitment-list">
@@ -552,7 +558,10 @@
             </div>
         </section>
     @endsection
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

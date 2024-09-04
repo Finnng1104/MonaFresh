@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="{{ asset('css/directory/directory.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mobile-interface/mobile-navigation.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
     @extends('layout.layout')
 
     @section('content')
-        <h1>DANH BẠN NHÀ NÔNG</h1>
+        <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">DANH BẠN NHÀ NÔNG</h1>
         <div class="container" id="directory">
-            <div class="sidebar-directory">
+            <div class="sidebar-directory" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
                 <div class="search-directory">
                     <input type="text" placeholder="Tìm kiếm...">
                     <button><i class="fas fa-search"></i></button>
@@ -55,7 +56,7 @@
                 </section>
             </div>
 
-            <div class="main-content">
+            <div class="main-content" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
                 <div class="directory-grid">
                     <div class="company-card">
                         <img src="{{ asset('img/congty/logo-1-300x144.png') }}" alt="Công ty Thực Phẩm Tâm Minh">
@@ -106,6 +107,10 @@
             </div>
         </div>
     @endsection
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

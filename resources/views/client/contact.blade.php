@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/layout/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contact/contact.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
@@ -16,13 +17,13 @@
 
     @section('content')
         <div class="contact-container container">
-            <div class="google-map">
+            <div class="google-map" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.222066284073!2d106.62368036806588!3d10.853785163716562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b6c59ba4c97%3A0x535e784068f1558b!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1706496866340!5m2!1svi!2s"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
                 <div class="contact-container-infor">
                     <div class="contact-image">
                         <img src="{{ asset('img/logo-mona.png') }}" alt="Panda">
@@ -76,6 +77,10 @@
             </div>
         </div>
     @endsection
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
