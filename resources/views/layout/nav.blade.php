@@ -1,31 +1,31 @@
 <div class="mobile-navigation">
     <div class="menu-overlay"></div>
     <div class="sidebar">
-        <!-- <button class="close-btn">&times;</button> -->
         <ul class="menu">
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="{{ route('home') }}">Trang chủ</a></li>
             <li class="menu-item-has-children">
                 <a href="#">Cửa hàng</a>
                 <ul class="submenu">
-                    <li><a href="#">Rau củ</a></li>
-                    <li><a href="#">Hải sản</a></li>
-                    <li><a href="#">Trái cây</a></li>
-                    <li><a href="#">Đồ uống</a></li>
-                    <li><a href="#">Đồ khô</a></li>
-                    <li><a href="#">Thịt trứng</a></li>
+                    <li><a href="{{ route('product.category', 'rau-cu') }}">Rau củ</a></li>
+                    <li><a href="{{ route('product.category', 'hai-san') }}">Hải sản</a></li>
+                    <li><a href="{{ route('product.category', 'trai-cay') }}">Trái cây</a></li>
+                    <li><a href="{{ route('product.category', 'do-uong') }}">Đồ uống</a></li>
+                    <li><a href="{{ route('product.category', 'do-kho') }}">Đồ khô</a></li>
+                    <li><a href="{{ route('product.category', 'thit-trung') }}">Thịt trứng</a></li>
                 </ul>
             </li>
-            <li><a href="#">Danh bạ nhà nông</a></li>
-            <li><a href="#">Kiến thức</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="{{ route('directory') }}">Danh bạ nhà nông</a></li>
+            <li><a href="{{ route('knowledge') }}">Kiến thức</a></li>
+            <li><a href="{{ route('contact') }}">Liên hệ</a></li>
         </ul>
     </div>
     <button class="open-btn">☰</button>
 </div>
+
 <div class="logo">
-    <a href="index.php"><img src="{{ asset('img/logo.png') }}" alt="MonaFresh"></a>
+    <a href="{{ route('home') }}"><img src="{{ asset('img/logo.png') }}" alt="MonaFresh"></a>
 </div>
+
 <nav class="navigation">
     <ul>
         <li class="{{ request()->is('/') ? 'active' : '' }}">

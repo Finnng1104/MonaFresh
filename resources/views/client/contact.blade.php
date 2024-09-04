@@ -8,6 +8,7 @@
     <title>Mona Fresh</title>
     <link rel="stylesheet" href="{{ asset('css/layout/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('css/contact/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mobile-interface/mobile-navigation.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
