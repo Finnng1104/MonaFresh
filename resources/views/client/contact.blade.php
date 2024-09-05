@@ -15,7 +15,6 @@
 
 <body>
     @extends('layout.layout')
-
     @section('content')
         <div class="contact-container container">
             <div class="google-map" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">

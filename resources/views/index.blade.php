@@ -534,7 +534,7 @@
                 </div>
             </div>
         </section>
-        </section> -->
+        </section>
         <section class="commitment" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
             <div class="container">
                 <h2>Cam kết của chúng tôi</h2>
