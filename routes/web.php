@@ -1,12 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProductController;
 // Trang chủ
-Route::get('/', function () {
-    return view('index');
-})->name('home');
-
+Route::get('/', [ProductController::class, 'index'])->name('home');
 // Cửa hàng
 Route::get('/product', function () {
     return view('client.product'); // Trang sản phẩm tổng quát
