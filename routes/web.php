@@ -17,4 +17,29 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
+
+// Đường dẫn cho trang chủ
+Route::get('/', function () {
+    return view('welcome');  // Sử dụng view 'welcome' hoặc view khác bạn đã tạo
+})->name('/');
+
+// Đường dẫn cho trang sản phẩm
+Route::get('/product', function () {
+    return view('product');
+})->name('product');
+
+// Đường dẫn cho trang danh bạ
+Route::get('/directory', function () {
+    return view('directory');
+})->name('directory');
+
+// Đường dẫn cho trang kiến thức
+Route::get('/knowledge', function () {
+    return view('knowledge');
+})->name('knowledge');
+
+// Đường dẫn cho trang liên hệ
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
