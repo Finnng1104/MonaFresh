@@ -8,7 +8,7 @@
                     <a href="tel:0376491104"><i class="fa-solid fa-phone"></i>0376491104</a>
                 </div>
                 <div class="header-auth">
-                    <a id="loginBtn" href="#">Đăng nhập / Đăng ký</a>
+                    <a id="loginBtn" href="{{ route('login') }}">Đăng nhập / Đăng ký</a>
                     <div id="user-info" style="display:none;">
                         <img id="user-avatar" src="" alt="User Avatar">
                         <span id="user-name"></span>

@@ -8,188 +8,190 @@ $link-hover-color: #6ABD42;
 $box-shadow-color: rgba(0, 0, 0, 0.1);
 $search-bar-padding: 10px;
 
-h1 {
-    text-align: center;
-    font-size: 19px;
-    font-weight: 100;
-    padding: 20px 0;
-}
-
-.sidebar-directory {
-    width: 10%;
-    min-width: 250px;
-    @media (max-width: 1100px) {
-        min-width: 220px;
+#directorypage{
+    h1 {
+        text-align: center;
+        font-size: 19px;
+        font-weight: 100;
+        padding: 20px 0;
     }
-      @media (max-width: 1050px) {
-        display: none;
-    }
-    .search-directory {
-        display: flex;
-        margin-bottom: 20px;
-
-        input[type="text"] {
-            width: 100%;
-            padding: 10px 15px;
-            border: 1px solid #e3e3e3;
-            border-radius: 4px 0 0 4px;
-            font-size: 16px;
+    
+    .sidebar-directory {
+        width: 10%;
+        min-width: 250px;
+        @media (max-width: 1100px) {
+            min-width: 220px;
         }
-
-        button {
-            padding: 10px 15px;
-            background-color: #6ABD42;
-            color: $background-color;
-            border: none;
-            border-radius: 0 4px 4px 0;
-            cursor: pointer;
-
-            i {
+          @media (max-width: 1050px) {
+            display: none;
+        }
+        .search-directory {
+            display: flex;
+            margin-bottom: 20px;
+    
+            input[type="text"] {
+                width: 100%;
+                padding: 10px 15px;
+                border: 1px solid #e3e3e3;
+                border-radius: 4px 0 0 4px;
                 font-size: 16px;
             }
-        }
-    }
-
-    .category-section {
-        border-radius: 10px 10px 0 0;
-        font-size: 14px;
-        overflow: hidden;
-        border: 1px solid #F8F8F8;
-        height: fit-content;
-
-        h2 {
-            font-weight: 100;
-            font-size: 20px;
-        }
-
-        .category-title {
-            background-color: #6ABD42;
-            color: white;
-            text-align: left;
-            margin: 0;
-            padding: 20px 30px;
-            border-bottom: 2px solid #f5f5f5;
-        }
-    }
-
-    .recent-posts {
-        list-style-type: none;
-        padding: 0px;
-
-        li {
-            display: flex;
-            padding: 15px 20px;
-            border: 1px solid #ececec;
-            border-top: none;
-
-            img {
-                width: 40px;
-                height: 40px;
-                object-fit: cover;
-                margin-right: 10px;
-                border-radius: 4px;
-            }
-
-            a {
-                color: #333;
-                font-size: 12px;
-                text-decoration: none;
-                line-height: 1.2;
-                font-weight: bold;
-            }
-
-            &:hover,
-            &.active {
+    
+            button {
+                padding: 10px 15px;
                 background-color: #6ABD42;
-
-                a {
-                    color: white;
+                color: $background-color;
+                border: none;
+                border-radius: 0 4px 4px 0;
+                cursor: pointer;
+    
+                i {
+                    font-size: 16px;
                 }
             }
         }
-
-        .color {
-            background-color: #F8F8F8;
+    
+        .category-section {
+            border-radius: 10px 10px 0 0;
+            font-size: 14px;
+            overflow: hidden;
+            border: 1px solid #F8F8F8;
+            height: fit-content;
+    
+            h2 {
+                font-weight: 100;
+                font-size: 20px;
+            }
+    
+            .category-title {
+                background-color: #6ABD42;
+                color: white;
+                text-align: left;
+                margin: 0;
+                padding: 20px 30px;
+                border-bottom: 2px solid #f5f5f5;
+            }
+        }
+    
+        .recent-posts {
+            list-style-type: none;
+            padding: 0px;
+    
+            li {
+                display: flex;
+                padding: 15px 20px;
+                border: 1px solid #ececec;
+                border-top: none;
+    
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    margin-right: 10px;
+                    border-radius: 4px;
+                }
+    
+                a {
+                    color: #333;
+                    font-size: 12px;
+                    text-decoration: none;
+                    line-height: 1.2;
+                    font-weight: bold;
+                }
+    
+                &:hover,
+                &.active {
+                    background-color: #6ABD42;
+    
+                    a {
+                        color: white;
+                    }
+                }
+            }
+    
+            .color {
+                background-color: #F8F8F8;
+            }
         }
     }
-}
-.main-content{
-    width: 75%;
-      @media (max-width: 1050px) {
-        width: 100%;
+    .main-content{
+        width: 75%;
+          @media (max-width: 1050px) {
+            width: 100%;
+        }
     }
-}
-.page-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.directory-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%; /* Điều chỉnh độ rộng của phần này để phù hợp với layout */
-}
-
-.company-card {
-    background-color: white;
-    border: 1px solid #e3e3e3;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    padding: 15px;
-    // display: flex;
-    align-items: center;
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    img {
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-        margin-right: 15px;
-    }
-
-    .date {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: #6ABD42;
-        color: white;
-        padding: 5px;
-        border-radius: 4px;
+    .page-title {
         text-align: center;
-        font-size: 14px;
-        width: 40px;
-
-        span:first-child {
-            display: block;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        span:last-child {
-            display: block;
-            font-size: 12px;
-        }
-    }
-
-    h3 {
-        font-size: 18px;
-        margin: 0;
+        font-size: 24px;
+        margin-bottom: 30px;
         color: #333;
     }
-
-    p {
-        font-size: 14px;
-        color: #777;
-        margin: 5px 0 0 0;
-        line-height: 1.5;
+    
+    .directory-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        width: 100%; /* Điều chỉnh độ rộng của phần này để phù hợp với layout */
+    }
+    
+    .company-card {
+        background-color: white;
+        border: 1px solid #e3e3e3;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        padding: 15px;
+        // display: flex;
+        align-items: center;
+    
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    
+        img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+    
+        .date {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #6ABD42;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+            width: 40px;
+    
+            span:first-child {
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+            }
+    
+            span:last-child {
+                display: block;
+                font-size: 12px;
+            }
+        }
+    
+        h3 {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+    
+        p {
+            font-size: 14px;
+            color: #777;
+            margin: 5px 0 0 0;
+            line-height: 1.5;
+        }
     }
 }

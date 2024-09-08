@@ -26,20 +26,20 @@ Route::get('/', function () {
 
 // Đường dẫn cho trang sản phẩm
 Route::get('/product', function () {
-    return view('product');
+    return view('client/product');
 })->name('product');
 
 // Đường dẫn cho trang danh bạ
 Route::get('/directory', function () {
-    return view('directory');
+    return view('client/directory');
 })->name('directory');
 
 // Đường dẫn cho trang kiến thức
 Route::get('/knowledge', function () {
-    return view('knowledge');
+    return view('client/knowledge');
 })->name('knowledge');
 
 // Đường dẫn cho trang liên hệ
 Route::get('/contact', function () {
-    return view('contact');
+    return view('client/contact');
 })->name('contact');

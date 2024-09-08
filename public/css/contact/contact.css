@@ -7,12 +7,12 @@
   font-family: Arial, sans-serif;
 }
 
-form {
+#contactpage form {
   width: 100%;
   font-size: 20px;
 }
-form input[type=text],
-form input[type=password] {
+#contactpage form input[type=text],
+#contactpage form input[type=password] {
   padding: 12px 20px;
   width: 49%;
   margin: 8px 0;
@@ -20,7 +20,7 @@ form input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-form button {
+#contactpage form button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -28,71 +28,64 @@ form button {
   cursor: pointer;
   width: 100%;
 }
-form button:hover {
+#contactpage form button:hover {
   opacity: 0.8;
 }
-form #submit-button {
+#contactpage form #submit-button {
   width: 50%;
   margin: 0 auto;
   font-weight: bold;
   background-color: #6ABD42;
 }
-
-.form-group-title {
+#contactpage .form-group-title {
   text-align: center;
   margin-top: 20px;
   font-size: 24px;
 }
-.form-group-title h3 {
+#contactpage .form-group-title h3 {
   font-weight: 100;
   font-family: Arial, sans-serif;
 }
-
-.divider {
+#contactpage .divider {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0 10px 0;
 }
-.divider::before, .divider::after {
+#contactpage .divider::before, #contactpage .divider::after {
   content: "";
   flex: 1;
   height: 2px;
   background-color: #6ABD42; /* Màu của đường kẻ */
   margin: 0 10px;
 }
-.divider .divider-icon {
+#contactpage .divider .divider-icon {
   color: #6ABD42; /* Màu của biểu tượng */
   font-size: 30px; /* Kích thước của biểu tượng */
 }
-
-.form-group {
+#contactpage .form-group {
   line-height: 20px;
   text-align: center;
 }
-.form-group .form-group-item {
+#contactpage .form-group .form-group-item {
   padding: 10px 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-label {
+#contactpage label {
   display: block;
 }
-
-#note {
+#contactpage #note {
   vertical-align: top;
   height: 150px;
 }
-
-textarea {
+#contactpage textarea {
   width: 100%;
   min-height: 170px;
   padding: 10px 20px;
 }
-
-.contact-container {
+#contactpage .contact-container {
   margin: 0 auto;
   height: -moz-fit-content;
   height: fit-content;
@@ -100,67 +93,65 @@ textarea {
   justify-content: space-between;
   margin-top: 50px;
 }
-.contact-container .google-map {
+#contactpage .contact-container .google-map {
   width: 48%;
 }
-.contact-container .contact-form {
+#contactpage .contact-container .contact-form {
   width: 48%;
 }
-
-.contact-container-infor {
+#contactpage .contact-container-infor {
   display: flex;
   justify-content: space-between;
 }
-.contact-container-infor .contact-image img {
+#contactpage .contact-container-infor .contact-image img {
   max-width: 135px;
   margin-right: 20px;
 }
-.contact-container-infor .contact-info ul {
+#contactpage .contact-container-infor .contact-info ul {
   list-style-type: none;
   padding: 0;
 }
-.contact-container-infor .contact-info ul li {
+#contactpage .contact-container-infor .contact-info ul li {
   display: flex;
   align-items: center;
   font-size: 16px;
   margin-bottom: 10px;
   color: #353535;
 }
-.contact-container-infor .contact-info ul li a {
+#contactpage .contact-container-infor .contact-info ul li a {
   color: #353535;
 }
-.contact-container-infor .contact-info ul li a:hover {
+#contactpage .contact-container-infor .contact-info ul li a:hover {
   color: #6ABD42;
 }
-.contact-container-infor .contact-info ul li i {
+#contactpage .contact-container-infor .contact-info ul li i {
   margin-right: 10px;
   width: 22px;
   font-size: 18px;
   height: auto;
   color: #353535;
 }
-
 @media (max-width: 900px) {
-  .contact-container {
+  #contactpage .contact-container {
     flex-direction: column;
   }
-  .contact-container .google-map {
+  #contactpage .contact-container .google-map {
     width: 100%;
     height: 400px;
     margin-bottom: 40px;
   }
-  .contact-container .contact-form {
+  #contactpage .contact-container .contact-form {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  .contact-container-infor {
+  #contactpage .contact-container-infor {
     flex-direction: column;
   }
-  .contact-container-infor .contact-image {
+  #contactpage .contact-container-infor .contact-image {
     text-align: center;
   }
-  .contact-container-infor .contact-image img {
+  #contactpage .contact-container-infor .contact-image img {
     max-width: 135px;
     margin-right: 20px;
     margin-bottom: 40px;
