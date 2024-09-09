@@ -2,9 +2,12 @@
 @section('content')
     <main id="homepage">
         <section class="hero">
-            <div class="hero-content">
+            <div class="banner-title">
+                <div class="snow"></div>
                 <h1>Tìm mua <span>thực phẩm sạch</span> từ <br> <span>nhà cung cấp uy tín</span> tại đây</h1>
-                <a href="#" style="color:aliceblue; font-size:50px; font-weight:bold; margin-top:20px">Mua ngay</a>
+                <button> <a href="{{ route('product') }}">Mua ngay</a></button>
+            </div>
+            <div class="hero-content">
             </div>
         </section>
         <!-- Product Categories -->

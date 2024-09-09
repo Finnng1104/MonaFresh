@@ -16,39 +16,130 @@ a{
         margin: 0 auto;
     
     }
-    
     .hero{
-        .hero-content{
-            background: url('../../img/banner.jpg') no-repeat center center;
-            background-size: cover;
+        position: relative;
+        .banner-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 100;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             color: white;
-            text-align: center;
-            padding: 250px 20px 150px 20px;
-            font-size: 25px;
-            text-transform: uppercase;
-            font-weight: lighter;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            .snow {
+                pointer-events: none;
+                position: absolute;
+                top: -650px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+                                radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+                                radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+                                radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+                                radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+                                radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+                                radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+                                radial-gradient(6px 6px at 120px 400px, #fff, transparent),
+                                radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+                background-size: 650px 650px;
+                animation: falling 10s linear infinite;
+            }
+
+            /* Tạo hiệu ứng di chuyển cho tuyết */
+            @keyframes falling {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(650px); }
+            }
+
+            /* Hiệu ứng cho tuyết trước */
+            .snow::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -350px;
+                right: 0;
+                bottom: 0;
+                background-image: inherit;
+                background-size: inherit;
+                animation: falling 15s linear infinite reverse;
+                opacity: 0.7;
+                filter: blur(1px);
+            }
+
+            /* Hiệu ứng cho tuyết sau */
+            .snow::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -250px;
+                right: 0;
+                bottom: 0;
+                background-image: inherit;
+                background-size: inherit;
+                animation: falling 18s linear infinite reverse;
+                opacity: 0.5;
+                text-align: center;
+                align-items: center;
+                filter: blur(2px);
+            }
             span{
                 font-size: 50px;
                 text-transform: uppercase;
                 font-weight: bold;
                 text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
             }
-            button{
+            button {
                 border-radius: 10px;
                 padding: 17px 20px;
                 background-color: #6ABD45;
                 margin-top: 20px;
                 border: none;
-                cursor: pointer;
+                z-index: 1000;
+                cursor: pointer; /* Ensure cursor pointer is here */
                 text-decoration: none;
-                a{
-                    text-decoration: none;
-                    color: white;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                }
             }
+            
+            button:hover {
+                background-color: #499e38; /* Change color on hover */
+            }
+            
+            button a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+        }
+        .hero-content{
+            background: url('../../img/banner.jpeg') no-repeat center center;
+            background-size: cover;
+            background-origin: padding-box;
+            color: white;
+            text-align: center;
+            height: 508px;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+            filter: brightness(0.8); 
+            .hero-content::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* Điều chỉnh độ trong suốt để kiểm soát độ tối */
+                pointer-events: none; /* Đảm bảo lớp phủ không ảnh hưởng đến tương tác người dùng */
+            }
+            /* Định nghĩa khu vực hiển thị tuyết */
         }
     }
     

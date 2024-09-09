@@ -32,8 +32,10 @@
 
                         <label for="password">Mật khẩu *</label>
                         <input type="password" id="password" name="password" required>
-
-                        <button type="submit">ĐĂNG NHẬP</button>
+                        <x-primary-button class="ms-3" type="submit">
+                            {{ __('Log in') }}
+                        </x-primary-button>
+                        {{-- <button type="submit">ĐĂNG NHẬP</button> --}}
                         <div id="g_id_onload"
                             data-client_id="670250432008-9hvkngumlsbpqve7n0u1gf6m7j1p3dnr.apps.googleusercontent.com"
                             data-callback="handleCredentialResponse" data-auto_prompt="false">
