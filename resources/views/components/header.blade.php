@@ -8,7 +8,7 @@
                     <a href="tel:0376491104"><i class="fa-solid fa-phone"></i>0376491104</a>
                 </div>
                 <div class="header-auth">
-                    <a id="loginBtn" href="{{ route('login') }}">Đăng nhập / Đăng ký</a>
+                    <a id="loginBtn" href="#">Đăng nhập / Đăng ký</a>
                     <div id="user-info" style="display:none;">
                         <img id="user-avatar" src="" alt="User Avatar">
                         <span id="user-name"></span>
@@ -32,10 +32,7 @@
 
                         <label for="password">Mật khẩu *</label>
                         <input type="password" id="password" name="password" required>
-                        <x-primary-button class="ms-3" type="submit">
-                            {{ __('Log in') }}
-                        </x-primary-button>
-                        {{-- <button type="submit">ĐĂNG NHẬP</button> --}}
+                        <button type="submit">ĐĂNG NHẬP</button>
                         <div id="g_id_onload"
                             data-client_id="670250432008-9hvkngumlsbpqve7n0u1gf6m7j1p3dnr.apps.googleusercontent.com"
                             data-callback="handleCredentialResponse" data-auto_prompt="false">
