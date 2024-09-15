@@ -65,18 +65,22 @@
             <div class="container">
                 <h2>Sản phẩm nổi bật</h2>
                 <div class="product-list pc-interface">
-                    {{-- @foreach ($bestSellingProducts as $product)
-                        <div class="product">
-                            <div class="product-img">
-                                <img src="{{ asset('/img/product/' . $product->image) }}" alt="{{ $product->name }}">
+                    @if (!empty($bestSellingProducts))
+                        @foreach ($bestSellingProducts as $product)
+                            <div class="product">
+                                <div class="product-img">
+                                    <img src="{{ asset('/img/product/' . $product->image) }}" alt="{{ $product->name }}">
+                                </div>
+                                <div class="product-content">
+                                    <h3>{{ $product->name }}</h3>
+                                    <p>{{ number_format($product->price, 0, ',', '.') }}₫</p>
+                                    <button>Thêm vào giỏ</button>
+                                </div>
                             </div>
-                            <div class="product-content">
-                                <h3>{{ $product->name }}</h3>
-                                <p>{{ number_format($product->price, 0, ',', '.') }}₫</p>
-                                <button>Thêm vào giỏ</button>
-                            </div>
-                        </div>
-                    @endforeach --}}
+                        @endforeach
+                    @else
+                        <p>Không có sản phẩm nào.</p>
+                    @endif
                 </div>
                 <div class="product-list mobile-interface">
                     {{-- @foreach ($bestSellingProducts as $product)
