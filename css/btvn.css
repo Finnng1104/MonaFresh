@@ -1,0 +1,45 @@
+.container{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.container1{
+    padding: 10%;
+}
+.container2{
+    clear: both;
+    padding: 10%;
+}
+.container3{
+    clear: both;
+    padding: 10%;
+}
+.dong1{
+    width: 15dvw;
+    height: 15dvw;
+    border: 1px solid red;
+}
+.dong2{
+    width: 15dvw;
+    height: 15dvw;
+    border: 1px solid green;
+}   
+.dong3 {
+    width: 15dvw;
+    height: 15dvw;
+    border: 1px solid black ;
+}  
+.dong3left{
+    width: 40dvw;
+    height: 15dvw;
+    border: 1px solid black ;
+}  
+.floatLeft{
+    float: left;
+}
+.floatRight{
+    float: right;
+}
+.middle{
+    margin-left: 15%;
+}

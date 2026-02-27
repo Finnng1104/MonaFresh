@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonaFresh - Đăng nhập</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/login-page.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-nav">
+        <div class="navBar">
+          <a href="mailto:monafresh@gmail.com">monafresh@gmail.com</a>
+          |
+          <a href="tel:190063648">190063648</a>
+        </div>
+        <div class="navBar right">
+          <a href="login.html">Đăng nhập/Đăng ký</a>
+          |
+          <a href="giohang.html">Giỏ hàng / 459.000 <u>đ</u></a>
+        </div>
+      </div>
+      <div class="header-nav marginTop">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../img/logo/mona.png" alt="MonaFresh"
+          /></a>
+        </div>
+        <div class="navBar menu-nav">
+          <input
+            type="checkbox"
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-label="Mở menu điều hướng"
+          />
+          <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Trang chủ</a></li>
+              <li><a href="product.html">Sản phẩm</a></li>
+              <li><a href="blog.html">Sổ tay nhà nông</a></li>
+              <li><a href="product.html">Cửa hàng</a></li>
+              <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p><a href="../index.html">Trang chủ</a> / Đăng nhập</p>
+        <h1>Đăng nhập tài khoản</h1>
+      </div>
+    </section>
+
+    <main class="container auth-page">
+      <div class="auth-layout">
+        <section class="auth-card">
+          <h2>Chào mừng quay lại</h2>
+          <p class="auth-subtitle">
+            Nhập email và mật khẩu để tiếp tục đặt hàng.
+          </p>
+
+          <form class="auth-form" action="#" method="post">
+            <div class="form-row">
+              <label for="login-email">Email</label>
+              <input
+                id="login-email"
+                type="email"
+                placeholder="ban@example.com"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-row">
+              <label for="login-password">Mật khẩu</label>
+              <input
+                id="login-password"
+                type="password"
+                placeholder="Nhập mật khẩu"
+                autocomplete="current-password"
+              />
+            </div>
+
+            <div class="auth-inline">
+              <label class="checkbox-wrap" for="remember-account">
+                <input id="remember-account" type="checkbox" />
+                <span>Ghi nhớ đăng nhập</span>
+              </label>
+              <a class="text-link" href="login.html">Quên mật khẩu?</a>
+            </div>
+
+            <button class="primary-btn" type="submit">Đăng nhập</button>
+          </form>
+
+          <p class="form-note">
+            * Trang chỉ mô phỏng giao diện, không lưu hay kiểm tra thông tin.
+          </p>
+        </section>
+
+        <aside class="auth-card auth-side">
+          <h3>Khách hàng mới?</h3>
+          <p>
+            Tạo tài khoản để lưu địa chỉ nhận hàng, theo dõi đơn và nhận ưu đãi
+            thành viên.
+          </p>
+          <ul>
+            <li>Lưu nhiều địa chỉ giao hàng nhanh</li>
+            <li>Nhận thông báo khuyến mãi sớm</li>
+            <li>Xem lại lịch sử mua hàng</li>
+          </ul>
+          <button class="outline-btn" type="button">Tạo tài khoản</button>
+          <a class="text-link" href="product.html">Hoặc tiếp tục mua sắm</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="containerFooter">
+        <div class="lienHe">
+          <img src="../img/logo/mona.png" alt="MonaFresh" />
+          <p>319 Lý Thường Kiệt, Quận 11, Tp.HCM</p>
+          <p>demonhunterg@gmail.com</p>
+          <p>mon@mona.media</p>
+          <p>076 922 0162</p>
+        </div>
+        <div class="hoTro">
+          <h4>Hỗ trợ khách hàng</h4>
+          <p><a href="product.html">Tìm kiếm</a></p>
+          <p><a href="../index.html">Giới thiệu</a></p>
+          <p><a href="lienhe.html">Liên hệ</a></p>
+          <p><a href="product.html">Cửa hàng</a></p>
+        </div>
+        <div class="chinhSach">
+          <h4>Chính sách</h4>
+          <p><a href="thanhtoan.html">Điều khoản dịch vụ</a></p>
+          <p><a href="thanhtoan.html">Chính sách bảo mật</a></p>
+          <p><a href="thanhtoan.html">Chính sách đổi trả</a></p>
+          <p><a href="blog.html">Câu hỏi thường gặp</a></p>
+        </div>
+        <div class="huongDan">
+          <h4>Hướng dẫn</h4>
+          <p><a href="thanhtoan.html">Hướng dẫn mua hàng</a></p>
+          <p><a href="thanhtoan.html">Hướng dẫn đổi trả</a></p>
+          <p><a href="thanhtoan.html">Hướng dẫn chuyển khoản</a></p>
+          <p><a href="thanhtoan.html">Hướng dẫn trả góp</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

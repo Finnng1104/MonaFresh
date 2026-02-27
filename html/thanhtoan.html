@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MonaFresh - Thanh toán</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/thanhtoan.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-nav">
+        <div class="navBar">
+          <a href="mailto:monafresh@gmail.com">monafresh@gmail.com</a>
+          |
+          <a href="tel:190063648">190063648</a>
+        </div>
+        <div class="navBar right">
+          <a href="login.html">Đăng nhập/Đăng ký</a>
+          |
+          <a href="giohang.html">Giỏ hàng / 459.000 <u>đ</u></a>
+        </div>
+      </div>
+      <div class="header-nav marginTop">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../img/logo/mona.png" alt="MonaFresh"
+          /></a>
+        </div>
+        <div class="navBar menu-nav">
+          <input
+            type="checkbox"
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-label="Mở menu điều hướng"
+          />
+          <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav>
+            <ul>
+              <li><a href="../index.html">Trang chủ</a></li>
+              <li><a href="product.html">Sản phẩm</a></li>
+              <li><a href="blog.html">Sổ tay nhà nông</a></li>
+              <li><a href="product.html">Cửa hàng</a></li>
+              <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p><a href="../index.html">Trang chủ</a> / Thanh toán</p>
+        <h1>Xác nhận đơn hàng</h1>
+      </div>
+    </section>
+
+    <main class="container checkout-page">
+      <div class="checkout-layout">
+        <section class="checkout-card checkout-form">
+          <h2>Thông tin nhận hàng</h2>
+
+          <form action="#" method="post">
+            <div class="form-grid two-col">
+              <div class="form-row">
+                <label for="full-name">Họ và tên</label>
+                <input id="full-name" type="text" placeholder="Nguyễn Văn A" />
+              </div>
+              <div class="form-row">
+                <label for="phone">Số điện thoại</label>
+                <input id="phone" type="tel" placeholder="09xx xxx xxx" />
+              </div>
+            </div>
+
+            <div class="form-grid two-col">
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="ban@example.com" />
+              </div>
+              <div class="form-row">
+                <label for="province">Tỉnh/Thành phố</label>
+                <input
+                  id="province"
+                  type="text"
+                  placeholder="TP. Hồ Chí Minh"
+                />
+              </div>
+            </div>
+
+            <div class="form-grid two-col">
+              <div class="form-row">
+                <label for="district">Quận/Huyện</label>
+                <input id="district" type="text" placeholder="Quận 11" />
+              </div>
+              <div class="form-row">
+                <label for="ward">Phường/Xã</label>
+                <input id="ward" type="text" placeholder="Phường 15" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="address">Địa chỉ cụ thể</label>
+              <input
+                id="address"
+                type="text"
+                placeholder="Số nhà, tên đường..."
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="note">Ghi chú cho đơn hàng</label>
+              <textarea
+                id="note"
+                placeholder="Ví dụ: Giao giờ hành chính, gọi trước khi giao..."
+              ></textarea>
+            </div>
+
+            <div class="option-group">
+              <h3>Phương thức giao hàng</h3>
+              <label class="option-item" for="ship-standard">
+                <input
+                  id="ship-standard"
+                  name="shipping"
+                  type="radio"
+                  checked
+                />
+                <span>Giao hàng tiêu chuẩn (1-2 ngày) - 30.000 đ</span>
+              </label>
+              <label class="option-item" for="ship-fast">
+                <input id="ship-fast" name="shipping" type="radio" />
+                <span>Giao nhanh trong ngày - 50.000 đ</span>
+              </label>
+            </div>
+
+            <div class="option-group">
+              <h3>Phương thức thanh toán</h3>
+              <label class="option-item" for="cod">
+                <input id="cod" name="payment" type="radio" checked />
+                <span>Thanh toán khi nhận hàng (COD)</span>
+              </label>
+              <label class="option-item" for="banking">
+                <input id="banking" name="payment" type="radio" />
+                <span>Chuyển khoản ngân hàng</span>
+              </label>
+            </div>
+
+            <label class="checkbox-confirm" for="confirm-order">
+              <input id="confirm-order" type="checkbox" checked />
+              <span
+                >Tôi đồng ý với điều khoản mua hàng và chính sách bảo mật.</span
+              >
+            </label>
+          </form>
+        </section>
+
+        <aside class="checkout-card checkout-summary">
+          <h2>Đơn hàng của bạn</h2>
+          <div class="summary-products">
+            <article>
+              <p>Xoài cát Hòa Lộc <span>x2</span></p>
+              <strong>280.000 <u>đ</u></strong>
+            </article>
+            <article>
+              <p>Thịt nạc đùi heo <span>x1</span></p>
+              <strong>84.000 <u>đ</u></strong>
+            </article>
+            <article>
+              <p>Cam xoàn <span>x1</span></p>
+              <strong>65.000 <u>đ</u></strong>
+            </article>
+          </div>
+
+          <div class="promo-box">
+            <label for="promo">Mã ưu đãi</label>
+            <div>
+              <input id="promo" type="text" placeholder="MONA10" />
+              <button type="button">Dùng mã</button>
+            </div>
+          </div>
+
+          <dl class="summary-total">
+            <div>
+              <dt>Tạm tính</dt>
+              <dd>429.000 <u>đ</u></dd>
+            </div>
+            <div>
+              <dt>Phí giao hàng</dt>
+              <dd>30.000 <u>đ</u></dd>
+            </div>
+            <div class="final">
+              <dt>Tổng thanh toán</dt>
+              <dd>459.000 <u>đ</u></dd>
+            </div>
+          </dl>
+
+          <button class="product-cta place-order-btn" type="button">
+            Đặt hàng
+          </button>
+          <a class="text-link" href="giohang.html">Quay lại giỏ hàng</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="containerFooter">
+        <div class="lienHe">
+          <img src="../img/logo/mona.png" alt="MonaFresh" />
+          <p>319 Lý Thường Kiệt, Quận 11, Tp.HCM</p>
+          <p>demonhunterg@gmail.com</p>
+          <p>mon@mona.media</p>
+          <p>076 922 0162</p>
+        </div>
+        <div class="hoTro">
+          <h4>Hỗ trợ khách hàng</h4>
+          <p><a href="product.html">Tìm kiếm</a></p>
+          <p><a href="../index.html">Giới thiệu</a></p>
+          <p><a href="lienhe.html">Liên hệ</a></p>
+          <p><a href="product.html">Cửa hàng</a></p>
+        </div>
+        <div class="chinhSach">
+          <h4>Chính sách</h4>
+          <p><a href="thanhtoan.html">Điều khoản dịch vụ</a></p>
+          <p><a href="thanhtoan.html">Chính sách bảo mật</a></p>
+          <p><a href="thanhtoan.html">Chính sách đổi trả</a></p>
+          <p><a href="blog.html">Câu hỏi thường gặp</a></p>
+        </div>
+        <div class="huongDan">
+          <h4>Hướng dẫn</h4>
+          <p><a href="thanhtoan.html">Hướng dẫn mua hàng</a></p>
+          <p><a href="thanhtoan.html">Hướng dẫn đổi trả</a></p>
+          <p><a href="thanhtoan.html">Hướng dẫn chuyển khoản</a></p>
+          <p><a href="thanhtoan.html">Hướng dẫn trả góp</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
